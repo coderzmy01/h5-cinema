@@ -1,24 +1,25 @@
-# my-app
+# cinema 移动端 demo
 
-## Project setup
-```
-npm install
-```
+## 页面布局
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- 首页
+  - 轮播
+  - 列表
+    - 详情页
+      - 影片信息
+      - 剧照
+  - tabbar
+    - 首页
+    - 影城
+    - 登录
+- 影城
+  - 列表展示影城
+- 登录
+  - 未完成
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 技术栈
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- vue
+- vuex
+- vue-router
+- less
