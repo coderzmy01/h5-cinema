@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-const route = [
+const routes = [
   {
     path: "*",
     redirect:"/film"
@@ -17,5 +17,5 @@ const route = [
 
 export default new VueRouter({
   mode:"hash",
-  route
+  routes
 })
