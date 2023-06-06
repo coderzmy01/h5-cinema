@@ -8,10 +8,13 @@
         ></div>
       </div>
     </swiperCpntVue>
+    <filmHeaderVue></filmHeaderVue>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import filmHeaderVue from './components/filmHeader.vue'
 import swiperCpntVue from './components/swiperCpnt.vue'
 export default {
   name: "film-page",
@@ -24,7 +27,8 @@ export default {
     }
   },
   components: {
-    swiperCpntVue
+    swiperCpntVue,
+    filmHeaderVue
   }
 
 }
