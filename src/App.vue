@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view> </router-view>
-    <tabbarVue></tabbarVue>
+    <tabbarVue v-if="checkTabbar()"></tabbarVue>
   </div>
 </template>
 
@@ -9,8 +9,17 @@
 import tabbarVue from './views/tabbar.vue'
 export default {
   name: 'App',
+  data () {
+    return {
+    }
+  },
   components: {
     tabbarVue
+  },
+  methods: {
+    checkTabbar () {
+      return !['/detail'].includes(this.$route.path)
+    }
   }
 }
 </script>
@@ -18,7 +27,9 @@ export default {
 <style  >
 html,
 body,
-ul,h3,p{
+ul,
+h3,
+p {
   margin: 0;
   padding: 0;
 }

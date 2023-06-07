@@ -10,6 +10,7 @@ const routes = [
   {
     path: '/film',
     name: "film",
+    redirect:"/nowFilming",
     component: () => import('@/views/film.vue'),
     children: [
       {
@@ -23,6 +24,16 @@ const routes = [
         component:()=>import("@/views/components/futureMovie")
       }
     ]
+  },
+  {
+    path: '/detail',
+    name: "detail",
+    component:()=>import("../views/components/filmDetail.vue")
+  },
+  {
+    path: '/cinema',
+    name: "cinema",
+    component:()=>import("@/views/cinemaList.vue")
   }
 ]
 

@@ -5,7 +5,7 @@
         <i class="iconfont icon-electronics"></i>
         <span>电影</span>
       </router-link>
-      <router-link active-class="tab-active" tag="li" to="/film">
+      <router-link active-class="tab-active" tag="li" to="/cinema">
         <i class="iconfont icon-box"></i>
         <span>影院</span>
       </router-link>
@@ -48,9 +48,9 @@ nav {
         font-size: 12px;
       }
     }
-    &.tab-active {
-      color: red;
-    }
   }
+}
+.tab-active {
+  color: red;
 }
 </style>

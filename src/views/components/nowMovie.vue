@@ -6,7 +6,11 @@
       finished-text="没有更多了"
       @load="onLoad"
     >
-      <van-cell v-for="item in list" :key="item.filmId">
+      <van-cell
+        v-for="item in list"
+        :key="item.filmId"
+        @click="handleClick(item.filmId)"
+      >
         <div class="left">
           <img :src="item.poster" alt="" />
         </div>
@@ -54,6 +58,9 @@ export default {
         this.loading = false
 
       })
+    },
+    handleClick (id) {
+      this.$router.push(`/detail?id=${id}`)
     }
   },
   mounted () {
