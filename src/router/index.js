@@ -34,6 +34,15 @@ const routes = [
     path: '/cinema',
     name: "cinema",
     component:()=>import("@/views/cinemaList.vue")
+  },
+  {
+    path: '/search',
+    name: 'search',
+    component:()=>import('@/views/cinemaSearch.vue')
+  },
+  {
+    path: '/city',
+    component:()=>import('@/views/cinemaCityList.vue')
   }
 ]
 
